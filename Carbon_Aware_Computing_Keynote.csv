@@ -1,0 +1,125 @@
+Keynote
+"Goals
+
+- sustainable cloud computing
+- lower carbon emission in ML workload"
+"Carbon aware solutions
+
+- compute in low carbon regions > have more renewable energy sources, i.e. solar, wind
+- compute in the time with most renewable energy generated
+- choose cloud provider with low PUE/ internal energy consumption of data center
+- choose efficient hardware, i.e. GPU, TPU
+- compute with special purposes, i.e. pre-train certain part of model/ model resize
+"
+"Energy intensive ≠ carbon intensive
+
+Depend on data center
+
+- using renewable energy > low/ no carbon computing"
+"Current cloud computing has 2.5 - 3.7% GHG emission
+
+*GHG: greenhouse gas, e.g. CO2, methane"
+"Carbon emitting sources
+
+- coal
+- natural gas
+- oil"
+"Non-carbon emitting sources
+
+- renewable energy, i.e. solar, wind"
+"Carbon emission formula
+
+- Amount of carbon used in ML workload = Carbon intensity*Amount of Energy used in ML workload"
+"Power usage effectiveness/ PUE
+
+- measure data center computing efficiency
+- internal energy consumption of data center/ real energy used"
+"Model computing ways
+- training
+- fine-tuning
+- inference/ serving"
+"Inference
+
+- make predictions
+- generate text, images"
+"Model types
+
+- generative model
+- transformer model"
+Neural architecture: automate neural network design
+"Machine learning lifecycle
+
+- hardware, i.e. CPU, GPU, data center
+- training, i.e. pre-training, fine-tuning
+- inference, i.e. serve or interact with users in real time"
+"Embodied carbon
+
+- any carbon emitted in supply chain for a given item
+- e.g. CPU, GPU, TPU, data centers, etc
+- GPU, TPU: more common for ML training"
+"Transfer learning
+
+- pre-training: from supervised model, with big datasets
+- fine-tuning: from pre-trained model, with smaller datasets"
+"Prompt engineering: no need to train, fine-tune from scratch and get a model to use"
+"Electricity map API
+
+- retrieve the last updated carbon intensity information in different regions by API call"
+"API call process
+
+Task: retrieve data of carbon intensity and power breakdown of each energy source
+
+- import environment
+- load environment
+- select a location
+- get lat, lon of the selected location
+- define Electricity map API_carbon intensity url with selected location (Task 1)
+- import request
+- import helper
+- get request carbon intensity url
+- import json
+- load json with defined request, i.e. API returned content
+- define Electricity map API_power breakdown url with selected location (Task 2)
+- get request power breakdown url
+- load json with defined request, i.e. API returned content
+
+*request function import from Python library
+*task 1 & 2 goal: return required data to judge energy consumption > low carbon or not
+*call power_stats in one step with a new location"
+"Power_stats one step code (after import and define settings)
+
+import helper, requests, json, numpy as np
+def power_stats(lat,lon, api_key=helper.load_emaps_api_key()):
+    coordinates = { ""lat"": lat, ""lon"": lon }
+
+    url_intensity = f""https://api.electricitymap.org/v3/carbon-intensity/latest?lat={coordinates['lat']}&lon={coordinates['lon']}""
+    request_intensity = requests.get(url_intensity, headers={""auth-token"": api_key})
+    intensity = json.loads(request_intensity.content)
+
+    url_breakdown = f""https://api.electricitymap.org/v3/power-breakdown/latest?lat={coordinates['lat']}&lon={coordinates['lon']}""
+    request_breakdown = requests.get(url_breakdown, headers={""auth-token"": api_key})
+    breakdown = json.loads(request_breakdown.content)
+
+    breakdown_abridged = {
+        'renewablePercentage': breakdown['renewablePercentage'],
+        'fossilFreePercentage': breakdown['fossilFreePercentage'],
+        'powerConsumptionBreakdown': breakdown['powerConsumptionBreakdown'],
+        'consumption_percent': {
+            k: np.round((v/breakdown['powerConsumptionTotal']) * 100) 
+            for k, v 
+            in breakdown['powerConsumptionBreakdown'].items()
+        },
+    }
+    
+    return intensity, breakdown_abridged"
+"API returned content of a selected location
+
+- carbon intensity
+- datetime
+- updated at time
+- created at time
+- emission factor type
+- renewable energy amount/ type
+- power consumption amount
+
+*if need power consumption %, use numpy to count and print out"
