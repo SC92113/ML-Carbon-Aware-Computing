@@ -4,9 +4,13 @@
 
 ### 🎯 Goal
 - **Perform low carbon training by carbon intensity**
+
   - Select low carbon region by carbon intensity
+
 - **Perform low carbon training by real time energy data**
+
   - Select low carbon region by real time energy data
+
 - **Quick access to notebook:**
 
 ### 💡 Key concepts in the project
