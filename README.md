@@ -33,7 +33,7 @@
     - Serve and interact with users in real time
 
 - **Carbon aware solutions**
-  - Compute in low carbon regions which have renewable energy sources (example project)
+  - Compute in low carbon regions which have renewable energy sources (refer to notebook)
     - Factors to be considered when selecting low carbon training locations
       - Cost
       - Security
@@ -43,7 +43,7 @@
   - Choose efficient hardware such as GPU and TPU
   - Compute with special purposes through model pretraining/ model resizing
 
-- **Electricity Map API call process**
+- **API call of Electricity Map**
   - Carbon intensity and power breakdown request of a training location in one step
 
 ### 📚 References
