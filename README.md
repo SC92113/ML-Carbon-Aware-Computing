@@ -41,6 +41,7 @@
       - Performance latency
   - Compute in the time with most renewable energy generated
   - Choose cloud provider with low power usage effectiveness (PUE)/ internal energy consumption of data center
+    - e.g. Google has multiple data centers around the world showing Carbon Free Energy Percentage (CFE%) for user references
   - Choose efficient hardware such as GPU and TPU
   - Compute with special purposes through model pretraining/ model resizing
 
