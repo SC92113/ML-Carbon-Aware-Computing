@@ -5,7 +5,7 @@
 ### 🎯 Goal
 - **Perform low carbon training by using real time carbon intensity**
 
-  1. Set up Google Cloud account and
+  1. Set up Google Cloud account
   2. Initialize Vertex AI application
   3. Set up training environment and import libraries
   4. Load Electricity Map carbon intensity API
