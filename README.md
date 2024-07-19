@@ -9,7 +9,7 @@
   2. Initialize Vertex Ai application
   3. Set up training environment and import libraries
   4. Select a training location with lowest carbon intensity
-    - Method 1: Select a training location based on public carbon intensity reference page
+    - Method 1: Select a training location based on public carbon intensity reference page 
     - Method 2: Define a cleanest function to select a training location from the region list by API
   5. Define task.py
   6. Define storage bucket
@@ -23,6 +23,14 @@
 
 - **Carbon emission formula**
   - Amount of carbon used in machine learning workload = Carbon intensity * Amount of Energy used in machine learning workload
+
+- **Energy used in machine learning lifecycle**
+  - Hardware
+    - CPU, GPU, data center
+  - Training
+    - Pre-training, fine-tuning
+  - Inference
+    - Serve and interact with users in real time
 
 - **Carbon aware solutions**
   - Compute in low carbon regions which have renewable energy sources (example project)
@@ -38,19 +46,11 @@
 - **Electricity Map API call process**
   - Carbon intensity and power breakdown request of a training location in one step
 
-- **Energy used in machine learning lifecycle**
-  - Hardware
-    - CPU, GPU, data center
-  - Training
-    - Pre-training, fine-tuning
-  - Inference
-    - Serve and interact with users in real time
-
 ### 📚 References
-- Electricity Map global carbon data: [Global real time carbon intensity](https://app.electricitymaps.com/map)
+- Electricity Map global carbon intensity: [Global real time carbon intensity](https://app.electricitymaps.com/map)
 - Electricity Map API portal: [Free personal tier API](https://api-portal.electricitymaps.com/)
 - Google Cloud region picker: [Region picker](https://cloud.withgoogle.com/region-picker/?_ga=2.35602913.1900645210.1721376901-275758419.1721116042&_gac=1.18114251.1721116042.CjwKCAjwtNi0BhA1EiwAWZaANCLZ8IKpUZPtW7lXpRlVVzAxdVYIcl4WIDGgmZ1absGbuyxsrl_qihoCG5MQAvD_BwE&_gl=1*1014ysf*_ga*Mjc1NzU4NDE5LjE3MjExMTYwNDI.*_ga_WH2QY8WWF5*MTcyMTM3NjkwMS4yLjEuMTcyMTM3NjkwNi41NS4wLjA.)
-- Google Cloud global carbon data: [Global batch carbon intensity](https://cloud.google.com/about/locations#americas)
+- Google Cloud global carbon intensity: [Global batch carbon intensity](https://cloud.google.com/about/locations#americas)
 
 ### 🔎 Research papers
   - [Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf)
