@@ -10,8 +10,8 @@
   3. Set up training environment and import libraries
   4. Load Electricity Map carbon intensity API
   5. Select a training location with lowest carbon intensity
-    - Method 1: Select a training location based on public carbon intensity reference page 
-    - Method 2: Define a cleanest function to select a training location from the region list by API
+     - Method 1: Select a training location based on public carbon intensity reference page
+     - Method 2: Define a cleanest function to select a training location from the region list by API
   5. Define task.py
   6. Define storage bucket
   7. Define custom training job
