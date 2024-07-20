@@ -5,6 +5,9 @@
 ### 🎯 Goal
 - **Perform low carbon training by using real time carbon intensity**
 
+  > [Note]
+  > This project is run by Vertex AI, which is only available after configuring Google Cloud environment. For other cloud provider users, please check the relevant training location services with your cloud providers.
+ 
   1. Set up Google Cloud account
   2. Initialize Vertex AI application
   3. Set up training environment and import libraries
@@ -12,11 +15,11 @@
   5. Select a training location with lowest carbon intensity
      - Method 1: Select a training location based on public carbon intensity reference page
      - Method 2: Define a cleanest function to select a training location from the region list by API
-  5. Define task.py
-  6. Define storage bucket
-  7. Define custom training job
-  8. Train model
-  9. Delete storage bucket
+  6. Define task.py
+  7. Define storage bucket
+  8. Define custom training job
+  9. Train model
+  10. Delete storage bucket
 
 - **Quick access to notebook: here**
 
