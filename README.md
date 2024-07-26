@@ -21,7 +21,7 @@
   9. Train model
   10. Delete storage bucket
 
-- **Quick access to notebook: [Real_Time_Energy_Data_Low_Carbon_Training.ipynb](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/782099d620173a68ac05661ce1c0175f517e2a09/Real_Time_Energy_Data_Low_Carbon_Training.ipynb)**
+- **Quick access to notebook:** [Real_Time_Energy_Data_Low_Carbon_Training.ipynb](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/782099d620173a68ac05661ce1c0175f517e2a09/Real_Time_Energy_Data_Low_Carbon_Training.ipynb)
 
 ### 💡 Key concepts in the project
 
