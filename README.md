@@ -2,6 +2,16 @@
 
 ### 🛠️ This project is supported by [DeepLearning.AI](https://www.deeplearning.ai/) and [Google Cloud](https://cloud.google.com/).
 
+## ☰ Table of Contents
+- [Goal](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-goal)
+- [Key concepts in the project](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-key-concepts-in-the-project)
+  - [Carbon emission formula](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#carbon-emission-formula)
+  - [Energy used in machine learning lifecycle](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#energy-used-in-machine-learning-lifecycle)
+  - [Carbon aware solutions](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#carbon-aware-solutions)
+  - [API call of Electricity Map](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#api-call-of-electricity-map)
+- [References](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-references)
+- [Research papers](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-research-papers)
+
 ## 🎯 Goal
 - ### Perform low carbon training by using real time carbon intensity
 
