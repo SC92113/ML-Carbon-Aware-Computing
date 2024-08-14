@@ -1,7 +1,5 @@
 # ML-Carbon-Aware-Computing
 
-### 🛠️ This project is supported by [DeepLearning.AI](https://www.deeplearning.ai/) and [Google Cloud](https://cloud.google.com/).
-
 ## ☰ Table of Contents
 - [Goal](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-goal)
 - [Key concepts in the project](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-key-concepts-in-the-project)
@@ -73,3 +71,5 @@
   - [Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf)
   - [Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf)
   - [Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of AI_Models.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of%20AI_Models.pdf)
+
+## 🛠️ This project is supported by [DeepLearning.AI](https://www.deeplearning.ai/) and [Google Cloud](https://cloud.google.com/).
