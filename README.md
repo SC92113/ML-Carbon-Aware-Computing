@@ -13,7 +13,7 @@
 ## 🎯 Goal
 ### Perform low carbon training by using real time carbon intensity
 
-> [Note]
+> [!NOTE]
 > This project is run by Vertex AI, which is only available after configuring Google Cloud environment. For other cloud provider users, please check the relevant training location services with your cloud providers.
 
 1. Set up Google Cloud account
