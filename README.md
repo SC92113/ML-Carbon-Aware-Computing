@@ -11,53 +11,53 @@
 - [Research papers](https://github.com/SC92113/ML-Carbon-Aware-Computing?tab=readme-ov-file#-research-papers)
 
 ## 🎯 Goal
-- ### Perform low carbon training by using real time carbon intensity
+### Perform low carbon training by using real time carbon intensity
 
-  > [Note]
-  > This project is run by Vertex AI, which is only available after configuring Google Cloud environment. For other cloud provider users, please check the relevant training location services with your cloud providers.
- 
-  1. Set up Google Cloud account
-  2. Initialize Vertex AI application
-  3. Set up training environment and import libraries
-  4. Load Electricity Map carbon intensity API
-  5. Select a training location with lowest carbon intensity
-     - Method 1: Select a training location based on public carbon intensity reference page
-     - Method 2: Define a cleanest function to select a training location from the region list by API
-  6. Define task.py
-  7. Define storage bucket
-  8. Define custom training job
-  9. Train model
-  10. Delete storage bucket
+> [Note]
+> This project is run by Vertex AI, which is only available after configuring Google Cloud environment. For other cloud provider users, please check the relevant training location services with your cloud providers.
 
-- ### Quick access to notebook: [Real_Time_Energy_Data_Low_Carbon_Training.ipynb](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/782099d620173a68ac05661ce1c0175f517e2a09/Real_Time_Energy_Data_Low_Carbon_Training.ipynb)
+1. Set up Google Cloud account
+2. Initialize Vertex AI application
+3. Set up training environment and import libraries
+4. Load Electricity Map carbon intensity API
+5. Select a training location with lowest carbon intensity
+   - Method 1: Select a training location based on public carbon intensity reference page
+   - Method 2: Define a cleanest function to select a training location from the region list by API
+6. Define task.py
+7. Define storage bucket
+8. Define custom training job
+9. Train model
+10. Delete storage bucket
+
+### Quick access to notebook: [Real_Time_Energy_Data_Low_Carbon_Training.ipynb](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/782099d620173a68ac05661ce1c0175f517e2a09/Real_Time_Energy_Data_Low_Carbon_Training.ipynb)
 
 ## 💡 Key concepts in the project
 
-- ### Carbon emission formula
-  - Amount of carbon used in machine learning workload = Carbon intensity * Amount of Energy used in machine learning workload
+### Carbon emission formula
+- Amount of carbon used in machine learning workload = Carbon intensity * Amount of Energy used in machine learning workload
 
-- ### Energy used in machine learning lifecycle
-  - Hardware
-    - CPU, GPU, data center
-  - Training
-    - Pre-training, fine-tuning
-  - Inference
-    - Serve and interact with users in real time
+### Energy used in machine learning lifecycle
+- Hardware
+  - CPU, GPU, data center
+- Training
+  - Pre-training, fine-tuning
+- Inference
+  - Serve and interact with users in real time
 
-- ### Carbon aware solutions
-  - Compute in low carbon regions which have renewable energy sources (refer to notebook)
-    - Factors to be considered when selecting low carbon training locations
-      - Cost
-      - Security
-      - Performance latency
-  - Compute in the time with most renewable energy generated
-  - Choose cloud provider with low power usage effectiveness (PUE)/ internal energy consumption of data center
-    - e.g. Google has multiple data centers around the world showing Carbon Free Energy Percentage (CFE%) for user references
-  - Choose efficient hardware such as GPU and TPU
-  - Compute with special purposes through model pretraining/ model resizing
+### Carbon aware solutions
+- Compute in low carbon regions which have renewable energy sources (refer to notebook)
+  - Factors to be considered when selecting low carbon training locations
+    - Cost
+    - Security
+    - Performance latency
+- Compute in the time with most renewable energy generated
+- Choose cloud provider with low power usage effectiveness (PUE)/ internal energy consumption of data center
+  - e.g. Google has multiple data centers around the world showing Carbon Free Energy Percentage (CFE%) for user references
+- Choose efficient hardware such as GPU and TPU
+- Compute with special purposes through model pretraining/ model resizing
 
-- ### API call of Electricity Map
-  - Carbon intensity and power breakdown request of a training location in one step
+### API call of Electricity Map
+- Carbon intensity and power breakdown request of a training location in one step
 
 ## 📚 References
 - Electricity Map global carbon intensity: [Global carbon intensity (real time)](https://app.electricitymaps.com/map)
@@ -68,8 +68,8 @@
 - Alternative of energy data API: [WattTime Data API (V3)](https://docs.watttime.org/)
 
 ## 🔎 Research papers
-  - [Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf)
-  - [Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf)
-  - [Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of AI_Models.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of%20AI_Models.pdf)
+- [Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Power_Hungry_Processing_Watts_Driving_the_Cost_of_AI_Deployment.pdf)
+- [Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Measuring_the_Carbon_Intensity_of_AI_in_Cloud_Instances.pdf)
+- [Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of AI_Models.pdf](https://github.com/SC92113/ML-Carbon-Aware-Computing/blob/83d61dd6cadd68b0c9e06208c0ddbd2c2b5b0dae/Making_AI_Less_Thirsty_Uncovering_and_Addressing_the_Secret_Water_Footprint_of%20AI_Models.pdf)
 
 ## 🛠️ This project is supported by [DeepLearning.AI](https://www.deeplearning.ai/) and [Google Cloud](https://cloud.google.com/).
